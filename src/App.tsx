@@ -1,10 +1,13 @@
+import { Route, Routes } from "react-router-dom"
+import Login from "./pages/auth/login"
+
 function App() {
   
 
   return (
-    <>
-      <h1 className="text-slate-100">Hello World</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Login />} />
+    </Routes>
   )
 }
 
