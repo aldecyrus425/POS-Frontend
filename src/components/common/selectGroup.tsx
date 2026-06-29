@@ -17,10 +17,10 @@ const SelectGroup = ({label, value, onChange, options} : Props) => {
     <div className='d-flex flex-col'>
         <label htmlFor="" className='font-display bold'>{label}</label>
         <select className='border rounded w-full py-1 px-2'  name="" id="">
-            <option value="" selected disabled>{`Please select ${label}`}</option>
+            <option value="" selected disabled>{`-- Please select ${label.toLocaleLowerCase()} --`}</option>
             {
                 options.map((opt, index) => (
-                    <option value={opt.value}>{opt.label}</option>
+                    <option key={index} value={opt.value}>{opt.label}</option>
                 ))
             }
         </select>
