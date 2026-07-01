@@ -8,6 +8,7 @@ import AdminDashboard from "./pages/admin/dashboard"
 import AdminMainLayout from "./components/layout/adminMainLayout"
 import CreatePurchaseOrder from "./components/forms/createPurchaseOrder"
 import PurchaseOrder from "./pages/admin/purchaseOrder"
+import Product from "./pages/admin/product"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/admin" element={<AdminMainLayout />}>
           <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="products" element={<Product />} />
           <Route path="purchase-order" element={<PurchaseOrder />} />
           <Route path="create-purchase-order" element={<CreatePurchaseOrder />} />
         </Route>
